@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Book Program Discussion (BPD)</title>
+        <link rel="icon" href="Logo.png"/>
+        <link rel="stylesheet" href="BPD.css" rel="stylesheet" type="text/css"/>
+        <script src="BPD.js" type="text/javascript"></script>
+    </head>
+    <body class="complement-background-color custom-color" id="body">
+        <header>
+            <img src="Logo.png" alt="BPD Placeholder Logo"/>
+            <h1>Book Program Discussion</h1>
+        </header>
+        <main>
+            <nav>
+                <div class="navButton selected custom-color complement-background-color-transparent complement-border-color clickable" id="homeBtn">
+                    <p><em>Home</em></p>
+                </div>
+                <div class="navButton clickable complement-background-color-transparent complement-border-color clickable" id="aboutBtn">
+                    <p><em>About Us</em></p>
+                </div>
+                <div class="navButton clickable complement-background-color-transparent complement-border-color clickable" id="booksBtn">
+                    <p><em>Books</em></p>
+                </div>
+                <div class="navButton clickable complement-background-color-transparent complement-border-color clickable" id="startedBtn">
+                    <p><em>Get Started</em></p>
+                </div>
+                <div class="navButton clickable complement-background-color-transparent complement-border-color clickable" id="newsBtn">
+                    <p><em>News</em></p>
+                </div>
+                <div class="navButton clickable complement-background-color-transparent complement-border-color clickable" id="membersBtn">
+                    <p><em>Members</em></p>
+                </div>
+                <div onclick="showModal();" class="navButton clickable complement-background-color-transparent complement-border-color clickable" id="loginBtn">
+                    <p><em>Login</em></p>
+                </div>
+            </nav>
+            <section class="complement-background-color-transparent">
+                <h2>Hot New Releases</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <p class="bookTitle">The Garden of Lost Souls</p>
+                            <p><em>Author: Kurotori</em></p>
+                        </td>
+                        <td class="clickable">Read/Discuss &#10148;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="bookTitle">Antesurrection</p>
+                            <p><em>Author: Michael McKenzie</em></p>
+                        </td>
+                        <td class="clickable">Read/Discuss &#10148;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="bookTitle">The Dollmaker's Reverie</p>
+                            <p><em>Author: Ides</em></p>
+                        </td>
+                        <td class="clickable">Read/Discuss &#10148;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="bookTitle">Becoming</p>
+                            <p><em>Author: Kurotori</em></p>
+                        </td>
+                        <td class="clickable">Read/Discuss &#10148;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="bookTitle">The Melody in the Basement</p>
+                            <p><em>Author: Ides</em></p>
+                        </td>
+                        <td class="clickable">Read/Discuss &#10148;</td>
+                    </tr>
+                </table>
+                <br>
+                <span class="clickable more">&#711;</span>
+            </section>
+            <div class="sectionContainer">
+                <section class="complement-background-color-transparent">
+                    <h2>Not a member yet?</h2>
+                    <h3 onclick="showModal();" class="clickable" id="trigger-modal">Register Now &#10148;</h3>
+                </section>
+                <section class="complement-background-color-transparent">
+                    <h2>Latest News</h2>
+                    <br>
+                    <article>
+                        <p class="newsHeader">Corrosive Kindles Boost Book Sales by 30%</p>
+                        <p class="newsBlurb">According to TrustUs News, the new and wildly popular Kindle 6K, released to the public on May 2nd, is urgently being recalled. This is due to...</p>
+                    </article>
+                    <span class="clickable more">&#711;</span>
+                </section>
+            </div>
+        </main>
+        <div class="custom-background-color-transparent" id="modalWindow">
+            <div class="complement-background-color custom-color" id="modalContent">
+                <span onclick="closeModal();" class="clickable" id="modalClose">&CircleTimes;</span>
+                <h2>Register</h2>
+                <div id="bookclubrego">
+                    <form>
+                        <div class="regoDiv" id="userDetails">
+                            <h3>User Details</h3>
+                            <label for="givenName">First Name:</label>
+                            <input type="text" id="givenName">
+                            <label for="surname">Last Name:</label>
+                            <input type="text" id="surname">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="regoDiv" id="addresses">
+                            <h3>Addresses</h3>
+                            <label for="homeAddress">Home Address:</label>
+                            <input type="text" id="homeAddress">
+                            <label for="workAddress">Work Address:</label>
+                            <input type="text" id="workAddress">
+                        </div>
+                        <div class="regoDiv" id="contacts">
+                            <h3>Contacts</h3>
+                            <label for="mobileNumber">Mobile Phone:</label>
+                            <input type="tel" id="mobileNumber">
+                            <label for="emailAddress">Email Address:</label>
+                            <input type="email" id="emailAddress">
+                        </div>
+                        <button type="submit" id="registerBtn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
